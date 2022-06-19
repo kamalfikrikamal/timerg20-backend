@@ -1,0 +1,11 @@
+{
+  "name": "G20",
+  "version": "1.0.0",
+  "description": "G20 Timer Backend",
+  "main": "index.js",
+  "author": "Kamalalala",
+  "license": "MIT",
+  "dependencies": {
+    "mysql": "^2.18.1"
+  }
+}
