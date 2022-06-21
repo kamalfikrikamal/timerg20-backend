@@ -9,13 +9,18 @@ var port = 8080
 http.createServer(function (req, res) {
     res.setHeader('Access-Control-Allow-Origin', '*');
 	res.setHeader('Access-Control-Request-Method', '*');
-	res.setHeader('Access-Control-Allow-Methods', 'OPTIONS, GET');
+	res.setHeader('Access-Control-Allow-Methods', '*');
 	res.setHeader('Access-Control-Allow-Headers', '*');
-	if ( req.method === 'OPTIONS' ) {
-		res.writeHead(200);
-		res.end();
-		return;
-	}
+	// if ( req.method === 'OPTIONSGET' ) {
+	// 	res.writeHead(200);
+	// 	res.end();
+	// 	return;
+	// } else if(req.method === 'OPTIONSUPDATE') {
+    //     res.writeHead(200);
+	// 	res.end();
+	// 	return;
+    // }
+    
 
     var q = url.parse(req.url, true);
     
