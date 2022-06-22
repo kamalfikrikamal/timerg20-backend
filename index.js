@@ -145,7 +145,24 @@ http.createServer(function (req, res) {
 		    
 	    });    	
 
-    }else{
+    }
+    
+    else if(q.pathname == "/reset" && req.method === "PUT"){
+        let sql = `UPDATE  scenario set status = 'Belum dilaksanakan', waktu = '00:00:00.0000'`
+        
+        db.query(sql,(err, result) => {
+            if (err) throw err;
+            
+            if(result.affectedRows == 5){
+                res.end(JSON.stringify({message: 'success'}));	
+            }else{
+                res.end(JSON.stringify({message: 'gagal'}));	
+            }
+            
+        });
+    }
+    
+    else{
 
     	res.end();	
 
