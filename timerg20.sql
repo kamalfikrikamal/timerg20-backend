@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: localhost
--- Generation Time: Jun 19, 2022 at 07:55 AM
+-- Generation Time: Jun 24, 2022 at 01:06 AM
 -- Server version: 10.4.24-MariaDB
 -- PHP Version: 8.1.6
 
@@ -39,11 +39,12 @@ CREATE TABLE `scenario` (
 --
 
 INSERT INTO `scenario` (`id`, `skenario`, `status`, `waktu`) VALUES
-(1, 'skenario 1', 'Belum dilaksanakan', '00:00:00.0000'),
-(2, 'skenario 2', 'Belum dilaksanakan', '00:00:00.0000'),
-(3, 'skenario 3', 'Belum dilaksanakan', '00:00:00.0000'),
-(4, 'skenario 4', 'Belum dilaksanakan', '00:00:00.0000'),
-(5, 'skenario 5', 'Belum dilaksanakan', '00:00:00.0000');
+(1, 'Skenario 1', 'Belum dilaksanakan', '00:00:00.0000'),
+(2, 'Skenario 2', 'Belum dilaksanakan', '00:00:00.0000'),
+(3, 'Skenario 3', 'Belum dilaksanakan', '00:00:00.0000'),
+(4, 'Skenario 4', 'Belum dilaksanakan', '00:00:00.0000'),
+(5, 'Skenario 5', 'Belum dilaksanakan', '00:00:00.0000'),
+(12, 'Skenario 6', 'Belum dilaksanakan', '00:00:00.0000');
 
 --
 -- Indexes for dumped tables
@@ -63,7 +64,7 @@ ALTER TABLE `scenario`
 -- AUTO_INCREMENT for table `scenario`
 --
 ALTER TABLE `scenario`
-  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
+  MODIFY `id` int(11) UNSIGNED NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
